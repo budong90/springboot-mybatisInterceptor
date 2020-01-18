@@ -14,7 +14,7 @@ import javax.annotation.Resource;
  * @date ：2019/6/13 10:57
  */
 @Service
-@Slf4j(topic="数据插入分表【AddDataImpl】")
+@Slf4j(topic = "数据插入分表【AddDataImpl】")
 public class AddDataImpl implements AddData {
 
     @Resource
@@ -29,9 +29,9 @@ public class AddDataImpl implements AddData {
     public int add(TestDatas datas) {
 
         int flunceNum = testdatasDao.insert(datas);
-        if(0 != flunceNum){
+        if (0 != flunceNum) {
             log.info("插入数据成功");
-        }else {
+        } else {
             log.info("插入数据失败");
         }
 

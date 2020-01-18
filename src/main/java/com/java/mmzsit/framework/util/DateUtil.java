@@ -1,4 +1,4 @@
-package com.java.mmzsit.framework.mybatisStrategy.framework.util;
+package com.java.mmzsit.framework.util;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -57,6 +57,7 @@ public class DateUtil {
     public static String get_MM01Str(String dataStr) throws ParseException {
         return getStrByDateFormat("yyyyMM01", getDatebyFormaterStr("yyyyMMdd", dataStr));
     }
+
     public static Date getDatebyFormaterStr(String formater, String dateStr) throws ParseException {
         SimpleDateFormat sdf = new SimpleDateFormat(formater);
         return sdf.parse(dateStr);

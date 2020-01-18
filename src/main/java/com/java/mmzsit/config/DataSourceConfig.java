@@ -9,9 +9,11 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+
 import javax.sql.DataSource;
 import java.util.HashMap;
 import java.util.Map;
+
 /**
  * @author ：mmzsit
  * @description：
@@ -59,7 +61,7 @@ public class DataSourceConfig {
         initParameters.put("loginPassword", "admin");
         initParameters.put("deny", ""); //ip黑名单
         /**
-        如果某个ip同时存在，deny优先于allow
+         如果某个ip同时存在，deny优先于allow
          */
         servletRegistrationBean.setInitParameters(initParameters);
         return servletRegistrationBean;

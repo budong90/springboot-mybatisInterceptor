@@ -13,6 +13,6 @@ public interface Strategy {
      * @param splitParam
      * @return
      */
-    String returnTableName(String tableName,String splitParam);
+    String returnTableName(String tableName, String splitParam);
 
 }

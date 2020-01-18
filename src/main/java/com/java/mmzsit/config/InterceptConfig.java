@@ -3,6 +3,7 @@ package com.java.mmzsit.config;
 import com.java.mmzsit.framework.interceptor.TableSplitInterceptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+
 /**
  * @author ：mmzsit
  * @description：

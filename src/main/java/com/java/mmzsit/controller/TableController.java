@@ -25,19 +25,18 @@ public class TableController {
 
         int result = 0;
         int j = 0;
-        for (int i=0; i < 3; i++){
+        for (int i = 0; i < 3; i++) {
             TestDatas datas = new TestDatas();
             datas.setId(j++);
-            datas.setName("数据"+j);
-            datas.setAge(""+j);
-            datas.setInformation("测试信息"+j++);
-            datas.setUpdatedate((201905+i)+"01");
-            result +=  addData.add(datas);
+            datas.setName("数据" + j);
+            datas.setAge("" + j);
+            datas.setInformation("测试信息" + j++);
+            datas.setUpdatedate((201905 + i) + "01");
+            result += addData.add(datas);
         }
 
         return "成功插入" + result + "条数据";
     }
-
 
 
     @PostMapping("/postadd")

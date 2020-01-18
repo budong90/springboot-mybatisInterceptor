@@ -14,10 +14,10 @@ import java.lang.annotation.Target;
 @Target({ElementType.TYPE})
 public @interface TableSplitRule {
 
-	public String tableName();
-	
-	//暂时只支持单参数
-	public String paramName();
-	
-	public String targetName();
+    public String tableName();
+
+    //暂时只支持单参数
+    public String paramName();
+
+    public String targetName();
 }

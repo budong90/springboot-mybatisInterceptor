@@ -13,15 +13,15 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class StrategyConfig {
 
-	/**
-	 * 策略配置类
-	 * @return
-	 */
-	@Bean
-	public StrategyManager strategyManager() {
-		StrategyManager strategyManager = new StrategyManager();
-		strategyManager.addStrategy(StrategyManager._YYYYMM01, new YYYYMM01Strategy());
-		return strategyManager;
-	}
-	
+    /**
+     * 策略配置类
+     * @return
+     */
+    @Bean
+    public StrategyManager strategyManager() {
+        StrategyManager strategyManager = new StrategyManager();
+        strategyManager.addStrategy(StrategyManager._YYYYMM01, new YYYYMM01Strategy());
+        return strategyManager;
+    }
+
 }
